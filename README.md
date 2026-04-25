@@ -82,22 +82,21 @@ git clone https://github.com/m14r41/wordlistForger.git && cd wordlistForger && p
 ```python
 python wordlistForger.py -p api_key7m9xq2kpl4 -l 10   --strict-case
 python wordlistForger.py -p api_key7m9xq2kpl4 -l 10   --lock api_key --live
-
 ```
-<img width="1022" height="966" alt="image" src="https://github.com/user-attachments/assets/e7c897aa-4f9f-4096-87b4-aad321849f89" />
+<img width="1022" height="966" alt="1" src="https://github.com/user-attachments/assets/784fe21d-b746-4e88-9e80-cb53ccd308c4" />
 
 
 ## Generate Invoice ID
 
-<img width="1348" height="936" alt="image" src="https://github.com/user-attachments/assets/3ef54b75-66ef-47ac-9bfa-efe058f713b2" />
+<img width="1348" height="936" alt="2" src="https://github.com/user-attachments/assets/afc675ec-662a-4f31-b2d6-4daa7195df2e" />
 
 ## Generate ORDER ID
 ```python
 python wordlistForger.py -p ODER-ID-1943AC -l 10 --lock ODER-ID --live
 python wordlistForger.py -p ODER-ID-1943AC -l 10 --lock ODER-ID --strict-case --live
-
 ```
-<img width="1151" height="964" alt="image" src="https://github.com/user-attachments/assets/9a66b795-e642-42c6-9c20-f4aadc849133" />
+<img width="1151" height="964" alt="3" src="https://github.com/user-attachments/assets/1a4630d2-d6ac-40b2-8dad-01dfceb38019" />
+
 
 
 # Advance Use case: --match-pattern
@@ -138,7 +137,7 @@ tuvw
 ## 3. Numbers only
 
 ```bash id="u3"
-python .\wordlistForger.py -p nnnnnn -l 5 --match-pattern
+wordlistForger -p nnnnnn -l 5 --match-pattern
 ```
 
 ```id="u3o"
@@ -154,7 +153,7 @@ python .\wordlistForger.py -p nnnnnn -l 5 --match-pattern
 ## 4. Hex strings
 
 ```bash id="u4"
-python .\wordlistForger.py -p xxxxxxxx -l 5 --match-pattern
+wordlistForger  -p xxxxxxxx -l 5 --match-pattern
 ```
 
 ```id="u4o"
@@ -170,7 +169,7 @@ abcdef12
 ## 5. UUID format
 
 ```bash id="u5"
-python .\wordlistForger.py -p xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -l 5 --match-pattern
+wordlistForger  -p xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -l 5 --match-pattern
 ```
 
 ```id="u5o"
@@ -186,7 +185,7 @@ abcdef12-3456-7890-abcd-ef1234567890
 ## 6. Order IDs
 
 ```bash id="u6"
-python .\wordlistForger.py -p ORD-nnnnnn -l 5 --match-pattern
+wordlistForger -p ORD-nnnnnn -l 5 --match-pattern
 ```
 
 ```id="u6o"
@@ -202,7 +201,7 @@ ORD-902134
 ## 7. Invoice IDs
 
 ```bash id="u7"
-python .\wordlistForger.py -p INV-AAAA-nnnn -l 5 --match-pattern
+wordlistForger  -p INV-AAAA-nnnn -l 5 --match-pattern
 ```
 
 ```id="u7o"
@@ -218,7 +217,7 @@ INV-ZXCV-3344
 ## 8. API keys (short)
 
 ```bash id="u8"
-python .\wordlistForger.py -p xxxxxxxxxxxxxxxxxxxxxxxx -l 5 --match-pattern
+wordlistForger  -p xxxxxxxxxxxxxxxxxxxxxxxx -l 5 --match-pattern
 ```
 
 ```id="u8o"
@@ -234,7 +233,7 @@ ffeeddccbbaa998877665544
 ## 9. MAC addresses
 
 ```bash id="u9"
-python .\wordlistForger.py -p xx:xx:xx:xx:xx:xx -l 5 --match-pattern
+wordlistForger  -p xx:xx:xx:xx:xx:xx -l 5 --match-pattern
 ```
 
 ```id="u9o"
@@ -250,7 +249,7 @@ ab:cd:ef:12:34:56
 ## 10. Coupon codes
 
 ```bash id="u10"
-python .\wordlistForger.py -p SAVE-AAAA-nn -l 5 --match-pattern
+wordlistForger -p SAVE-AAAA-nn -l 5 --match-pattern
 ```
 
 ```id="u10o"
@@ -266,7 +265,7 @@ SAVE-ZXCV-90
 ## 11. User IDs
 
 ```bash id="u11"
-python .\wordlistForger.py -p user_nnnnn -l 5 --match-pattern
+wordlistForger -p user_nnnnn -l 5 --match-pattern
 ```
 
 ```id="u11o"
@@ -282,7 +281,7 @@ user_90213
 ## 12. Transaction IDs
 
 ```bash id="u12"
-python .\wordlistForger.py -p TXN-xxxxxxxx -l 5 --match-pattern
+wordlistForger -p TXN-xxxxxxxx -l 5 --match-pattern
 ```
 
 ```id="u12o"
@@ -298,7 +297,7 @@ TXN-1234abcd
 ## 13. License keys
 
 ```bash id="u13"
-python .\wordlistForger.py -p AAAAA-AAAAA-AAAAA -l 5
+wordlistForger  -p AAAAA-AAAAA-AAAAA -l 5
 ```
 
 ```id="u13o"
@@ -314,7 +313,7 @@ FgHiJ-KlMnO-PqRsT
 ## 14. Employee IDs
 
 ```bash id="u14"
-python .\wordlistForger.py -p EMP-nnnn -l 5 --match-pattern
+wordlistForger -p EMP-nnnn -l 5 --match-pattern
 ```
 
 ```id="u14o"
@@ -330,7 +329,7 @@ EMP-3342
 ## 15. Bank reference numbers
 
 ```bash id="u15"
-python .\wordlistForger.py -p REF-nnnnnnnn -l 5 --match-pattern
+wordlistForger -p REF-nnnnnnnn -l 5 --match-pattern
 ```
 
 ```id="u15o"
@@ -346,7 +345,7 @@ REF-90213411
 ## 16. Tracking numbers
 
 ```bash id="u16"
-python .\wordlistForger.py -p TRK-AAAA-nnnn -l 5 --match-pattern
+wordlistForger -p TRK-AAAA-nnnn -l 5 --match-pattern
 ```
 
 ```id="u16o"
@@ -362,7 +361,7 @@ TRK-ZXCV-3344
 ## 17. Serial numbers
 
 ```bash id="u17"
-python .\wordlistForger.py -p SN-xxxx-xxxx -l 5 --match-pattern
+wordlistForger -p SN-xxxx-xxxx -l 5 --match-pattern
 ```
 
 ```id="u17o"
@@ -378,7 +377,7 @@ SN-0f1e-2d3c
 ## 18. Database IDs
 
 ```bash id="u18"
-python .\wordlistForger.py -p ID-nnnnn -l 5 --match-pattern
+wordlistForger -p ID-nnnnn -l 5 --match-pattern
 ```
 
 ```id="u18o"
@@ -394,7 +393,7 @@ ID-90213
 ## 19. Session tokens
 
 ```bash id="u19"
-python .\wordlistForger.py -p xxxxxxxxxxxxxxxx -l 5 --match-pattern
+wordlistForger -p xxxxxxxxxxxxxxxx -l 5 --match-pattern
 ```
 
 ```id="u19o"
@@ -410,7 +409,7 @@ ffeeddccbbaa9988
 ## 20. Temporary passwords
 
 ```bash id="u20"
-python .\wordlistForger.py -p Aaannn -l 5 --match-pattern
+wordlistForger -p Aaannn -l 5 --match-pattern
 ```
 
 ```id="u20o"
@@ -426,7 +425,7 @@ Zxc567
 ## 21. WiFi passwords
 
 ```bash id="u21"
-python .\wordlistForger.py -p WIFI-xxxx-nnnn -l 5 --match-pattern
+wordlistForger -p WIFI-xxxx-nnnn -l 5 --match-pattern
 ```
 
 ```id="u21o"
@@ -442,7 +441,7 @@ WIFI-0f1e-3344
 ## 22. API tokens (long)
 
 ```bash id="u22"
-python .\wordlistForger.py -p xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -l 5 --match-pattern
+wordlistForger -p xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -l 5 --match-pattern
 ```
 
 ```id="u22o"
@@ -458,7 +457,7 @@ ffeeddccbbaa99887766554433221100
 ## 23. Discount codes
 
 ```bash id="u23"
-python .\wordlistForger.py -p SALE-AAAA-nn -l 5 --match-pattern
+wordlistForger -p SALE-AAAA-nn -l 5 --match-pattern
 ```
 
 ```id="u23o"
@@ -474,7 +473,7 @@ SALE-ZXCV-90
 ## 24. Gaming usernames
 
 ```bash id="u24"
-python .\wordlistForger.py -p gamerAAA -l 5
+wordlistForger -p gamerAAA -l 5
 ```
 
 ```id="u24o"
@@ -490,7 +489,7 @@ gamerUiO
 ## 25. Log filenames
 
 ```bash id="u25"
-python .\wordlistForger.py -p log-2026-nnnn -l 5 --match-pattern
+wordlistForger -p log-2026-nnnn -l 5 --match-pattern
 ```
 
 ```id="u25o"
@@ -506,7 +505,7 @@ log-2026-3344
 ## 26. OTP codes
 
 ```bash id="u26"
-python .\wordlistForger.py -p nnnnnn -l 5 --match-pattern
+wordlistForger -p nnnnnn -l 5 --match-pattern
 ```
 
 ```id="u26o"
@@ -522,7 +521,7 @@ python .\wordlistForger.py -p nnnnnn -l 5 --match-pattern
 ## 27. Device IDs
 
 ```bash id="u27"
-python .\wordlistForger.py -p DEV-xxxxxx -l 5 --match-pattern
+wordlistForger -p DEV-xxxxxx -l 5 --match-pattern
 ```
 
 ```id="u27o"
@@ -538,7 +537,7 @@ DEV-0f1e2d
 ## 28. License plates
 
 ```bash id="u28"
-python .\wordlistForger.py -p AA-nnnn-AA -l 5 --match-pattern
+wordlistForger -p AA-nnnn-AA -l 5 --match-pattern
 ```
 
 ```id="u28o"
@@ -554,7 +553,7 @@ ZX-3344-CV
 ## 29. Fixed prefix (lock)
 
 ```bash id="u29"
-python .\wordlistForger.py -p xxxx-xxxx -l 5 --lock ACME
+wordlistForger -p xxxx-xxxx -l 5 --lock ACME
 ```
 
 ```id="u29o"
@@ -570,7 +569,7 @@ ACME-uvwx
 ## 30. Mask control
 
 ```bash id="u30"
-python .\wordlistForger.py -p AAAAAA -l 5 --lock-mask xxHRxx
+wordlistForger -p AAAAAA -l 5 --lock-mask xxHRxx
 ```
 
 ```id="u30o"
@@ -586,7 +585,7 @@ qrHRst
 ## 31. Reproducible dataset
 
 ```bash id="u31"
-python .\wordlistForger.py -p nnnn -l 5 --match-pattern -s 42
+wordlistForger -p nnnn -l 5 --match-pattern -s 42
 ```
 
 ```id="u31o"
@@ -602,7 +601,7 @@ python .\wordlistForger.py -p nnnn -l 5 --match-pattern -s 42
 ## 32. Live output
 
 ```bash id="u32"
-python .\wordlistForger.py -p xxxx -l 5 --match-pattern --live
+wordlistForger -p xxxx -l 5 --match-pattern --live
 ```
 
 ```id="u32o"
@@ -618,7 +617,7 @@ a3f9
 ## 33. Customer IDs
 
 ```bash id="u33"
-python .\wordlistForger.py -p CUST-nnnnn -l 5 --match-pattern
+wordlistForger -p CUST-nnnnn -l 5 --match-pattern
 ```
 
 ```id="u33o"
@@ -634,7 +633,7 @@ CUST-90213
 ## 34. Subscription IDs
 
 ```bash id="u34"
-python .\wordlistForger.py -p SUB-xxxx-nnnn -l 5 --match-pattern
+wordlistForger -p SUB-xxxx-nnnn -l 5 --match-pattern
 ```
 
 ```id="u34o"
@@ -650,7 +649,7 @@ SUB-0f1e-3344
 ## 35. OAuth tokens
 
 ```bash id="u35"
-python .\wordlistForger.py -p oauth_xxxxxxxxxx -l 5 --match-pattern
+wordlistForger -p oauth_xxxxxxxxxx -l 5 --match-pattern
 ```
 
 ```id="u35o"
@@ -666,7 +665,7 @@ oauth_1234abcd
 ## 36. Cloud resource IDs
 
 ```bash id="u36"
-python .\wordlistForger.py -p aws-xxxx-xxxx -l 5 --match-pattern
+wordlistForger -p aws-xxxx-xxxx -l 5 --match-pattern
 ```
 
 ```id="u36o"
@@ -682,7 +681,7 @@ aws-0f1e-2d3c
 ## 37. IoT device keys
 
 ```bash id="u37"
-python .\wordlistForger.py -p iot-xxxxxxxx -l 5 --match-pattern
+wordlistForger -p iot-xxxxxxxx -l 5 --match-pattern
 ```
 
 ```id="u37o"
@@ -698,7 +697,7 @@ iot-1234abcd
 ## 38. Backup identifiers
 
 ```bash id="u38"
-python .\wordlistForger.py -p BAK-2026-nnnn -l 5 --match-pattern
+wordlistForger -p BAK-2026-nnnn -l 5 --match-pattern
 ```
 
 ```id="u38o"
@@ -714,7 +713,7 @@ BAK-2026-3344
 ## 39. Audit log references
 
 ```bash id="u39"
-python .\wordlistForger.py -p AUD-xxxx-nnnn -l 5 --match-pattern
+wordlistForger -p AUD-xxxx-nnnn -l 5 --match-pattern
 ```
 
 ```id="u39o"
@@ -730,7 +729,7 @@ AUD-0f1e-3344
 ## 40. System session logs
 
 ```bash id="u40"
-python .\wordlistForger.py -p SYS-nnnnnnnn -l 5 --match-pattern
+wordlistForger -p SYS-nnnnnnnn -l 5 --match-pattern
 ```
 
 ```id="u40o"
